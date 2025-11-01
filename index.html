@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <meta name="description" content="Proyectos y contacto de BitAndes">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <a class="skip-link" href="#main-content">Saltar al contenido</a>
 
@@ -24,6 +26,119 @@
     <main id="main-content">
         <p>Hola, ¿en qué puedo ayudarte?</p>
     </main>
+    <!-- SECCIÓN 1: Relaciones mutualistas -->
+    <section class="mutualistas">
+        <div class="container mutualistas__content">
+            <!-- lado imagen -->
+            <div class="mutualistas__graphic">
+                <!-- aquí puedes poner tu imagen real -->
+                <img src="https://via.placeholder.com/500x360/151719/ffffff?text=Ilustracion" alt="Ilustración" />
+            </div>
+
+            <!-- lado texto + tarjeta -->
+            <div class="mutualistas__info">
+                <h2>Relaciones mutualistas exitosas</h2>
+                <p>
+                    Como consultores, empleamos procesos adaptados de transformación digital
+                    para establecer relaciones mutualistas exitosas con Multinacionales, PYMES, Startups.
+                </p>
+
+                <div class="mutualistas__card">
+                    <div class="logos" id="logos-track">
+                        <!-- slide 1 -->
+                        <div class="logos__slide logos__slide--active">
+                            <div class="logo">enel x</div>
+                            <div class="logo">HIKVISION</div>
+                            <div class="logo">datacrédito experian</div>
+                            <div class="logo">EZVIZ</div>
+                            <div class="logo">CINEMARK</div>
+                            <div class="logo">puntored</div>
+                            <div class="logo">EVENTFEED</div>
+                            <div class="logo">ChildFund.</div>
+                            <div class="logo">CONSTRUCTORA BOLÍVAR</div>
+                        </div>
+
+                        <!-- si quisieras más slides, los duplicas -->
+                        <div class="logos__slide">
+                            <div class="logo">Cliente 1</div>
+                            <div class="logo">Cliente 2</div>
+                            <div class="logo">Cliente 3</div>
+                            <div class="logo">Cliente 4</div>
+                        </div>
+
+                        <div class="logos__slide">
+                            <div class="logo">Otro 1</div>
+                            <div class="logo">Otro 2</div>
+                            <div class="logo">Otro 3</div>
+                        </div>
+                    </div>
+
+                    <!-- controles -->
+                    <div class="mutualistas__controls">
+                        <button class="circle-btn" id="prev-slide">&#8592;</button>
+                        <div class="dots" id="dots">
+                            <!-- se llenan desde JS -->
+                        </div>
+                        <button class="circle-btn" id="next-slide">&#8594;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN 2: Servicios -->
+    <section class="servicios">
+        <div class="container">
+            <div class="servicios__header">
+                <h2>Integra toda tu <span>transformación digital</span> en una agencia</h2>
+                <p>
+                    Agiliza tus esfuerzos digitales y logra tus objetivos de transformación digital con la comodidad de
+                    una
+                    agencia integrada. Dile adiós a las molestias de múltiples proveedores.
+                </p>
+            </div>
+
+            <div class="servicios__grid">
+                <!-- card 1 -->
+                <article class="service-card">
+                    <div class="service-card__icon service-card__icon--cyan">
+                        <!-- aquí puedes poner un svg tuyo -->
+                    </div>
+                    <h3>Agencia de diseño</h3>
+                    <p>
+                        Transforma tu marca y mejora la conexión y las emociones que generas. Construye y expande tu
+                        empresa a medios digitales.
+                    </p>
+                    <button class="btn-pink">Ver más</button>
+                </article>
+
+                <!-- card 2 -->
+                <article class="service-card service-card--middle">
+                    <div class="service-card__icon service-card__icon--green">
+                    </div>
+                    <h3>Agencia de marketing digital</h3>
+                    <p>
+                        Todo lo que necesitas para obtener resultados digitales. Acompañamiento en la planeación y
+                        ejecución de estrategias.
+                    </p>
+                    <span class="vertical-line"></span>
+                    <button class="btn-pink">Ver más</button>
+                </article>
+
+                <!-- card 3 -->
+                <article class="service-card">
+                    <div class="service-card__icon service-card__icon--magenta">
+                    </div>
+                    <h3>Agencia de desarrollo de software</h3>
+                    <p>
+                        Creamos soluciones tecnológicas a la medida para que tu negocio gane ventajas competitivas y
+                        presencia digital.
+                    </p>
+                    <button class="btn-pink">Ver más</button>
+                </article>
+            </div>
+        </div>
+    </section>
+    <script src="main.js" defer></script>
 
     <footer>
         <p>&copy; 2025 BitAndes</p>
@@ -31,4 +146,5 @@
 
     <script src="main.js" defer></script>
 </body>
+
 </html>
