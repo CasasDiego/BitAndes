@@ -12,16 +12,22 @@
 <body>
     <a class="skip-link" href="#main-content">Saltar al contenido</a>
   <p>Hola chetados jeje diego el pro ahora que hacemos con el genioo</p>
-    <header>
-        <h1>BitAndes</h1>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="index.html" aria-current="page">Inicio</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container header__inner">
+            <h1 class="site-logo"><a href="index.html">BitAndes</a></h1>
+
+            <button class="menu-toggle" id="menuToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+
+            <nav id="mainNav" class="main-nav" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li><a href="index.html" aria-current="page">Inicio</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main id="main-content">

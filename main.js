@@ -55,3 +55,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Toggle del menú responsive y accesibilidad básica
+document.addEventListener('DOMContentLoaded', function(){
+  const btn = document.getElementById('menuToggle');
+  const nav = document.getElementById('mainNav');
+
+  if(!btn || !nav) return;
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    nav.classList.toggle('nav--open', !expanded);
+  });
+
+  // Cerrar con Escape
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape' && nav.classList.contains('nav--open')){
+      nav.classList.remove('nav--open');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.focus();
+    }
+  });
+
+  // Cerrar al hacer click fuera (en mobile)
+  document.addEventListener('click', (e) => {
+    if(!nav.contains(e.target) && !btn.contains(e.target) && nav.classList.contains('nav--open')){
+      nav.classList.remove('nav--open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+});
